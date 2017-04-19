@@ -12,3 +12,7 @@ router.get('/', function(req, res) {
     "songs": "http://localhost:3000/api/v1/songs",
   });
 });
+
+router.use(require('./songs'))
+
+module.exports = router
